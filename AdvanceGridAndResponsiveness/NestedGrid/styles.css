@@ -1,0 +1,58 @@
+.container{
+    border: 2px solid black;
+    height: 600px;
+    width: 600px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 145px 445px;
+    grid-template-rows: 40px 500px  40px;
+    /* //Gap bhi consider hota hai accordingly set its heigth and width  */
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hd hd" "side main" "ft ft";
+}
+.box{
+    background-color: aqua;
+    border: 1px solid rebeccapurple;
+}
+#Header{
+    grid-area: hd;
+}
+#SideBar{
+    grid-area: side;
+}
+#Content{
+    grid-area: main;
+}
+#Footer{
+    grid-area: ft;
+}
+#Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.childgrid{
+    height: 90%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.element{
+    background-color: blue;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.cube{
+    height: 80%;
+    width: 80%;
+    background-color: orangered;
+    justify-self: center;
+    align-self: center;
+}

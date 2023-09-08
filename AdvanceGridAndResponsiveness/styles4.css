@@ -1,0 +1,39 @@
+.container{
+    border: 2px spolid red;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(2,100px);
+    /* grid-gap: 10px; */
+    height: 700px;
+    width: 600px;
+    /* justify-content: space-evenly; */
+    /* align-items: end; */
+    /* //content ko same line pe ayega font ko  */
+    /* align-items: baseline; */
+    /* align-items: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+
+
+    /* place-content: center; */
+    /* place-items: center; */
+
+
+    /* justify-items: center; */
+    /* align-items: center; */
+
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+.box{
+    border: 1px solid green;
+    background-color: aqua;
+}
+/* #box1{ */
+    /* justify-self: center; */
+    /* align-self: center; */
+/* } */

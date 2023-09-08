@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .container{
+        width:100vw;
+        height:100vh;
+        background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 600px;
+        width: 400px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 3px lightskyblue;
+        display: flex;
+        flex-direction: column;
+        /* ab dekho direction column hai toh align items se horizontally center hoga  */
+        align-items: center;
+        gap: 23px;
+    }
+    .card img{
+        width: 100% ;
+        height: 35%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .TextBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+    }
+    .TextBox p{
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .amountbox{
+        width: 70%;
+        height: 11%;
+        background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #leftbox{
+        /* width: fit-content; */
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 15px;
+
+    }
+    #rightbox a{
+        font-size: 21px;
+        text-decoration: none;
+        color: blue;
+    }
+    #PaymentButton{
+        height: 8%;
+        width: 70%;
+        background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+        border-radius: 10px;
+        font-size: large;
+        color: white;
+        filter: drop-shadow(10px 10px 4px #050527);   
+    }
+    .cancelbox a{
+        text-decoration: none;
+        color: darkslategrey;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .cancelbox:hover{
+        transition: all 0.19s linear 0s;
+        transform: scale(1.1);
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="processor.jpg" alt="Processorimage">
+            <div class="TextBox">
+                <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo officiis sunt, praesentium similique minus!</p>
+            </div>
+            <div class="amountbox">
+                <div id="leftbox">
+                    <div id="imagebox">
+                        <img src="musiclogo.png" alt="Musiclogo">
+                    </div>
+                    <div id="amount">
+                        <p><b>Amount</b></p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div id="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button id="PaymentButton">
+                Proceed to Payment
+            </button>
+            <div class="cancelbox">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

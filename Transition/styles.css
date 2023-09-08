@@ -1,0 +1,26 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    border: 3px solid red;
+    display: flex;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid orangered;
+    background-color: orange;
+    /* transition: all 1s linear 0s; */
+    /* transition: background-color 1s; */
+    /* transition: transform 1s linear 1s; */
+    /* transition: all 1s linear 1s; */
+    /* transition: all 200ms linear ; */
+    /* transition: transform 3s linear 1s; */
+    /* //timing function hai  */
+    transition: all 3s  ease 1s;
+}
+.box:hover{
+    background-color: aqua;
+    transform: translateX(1200px) rotate(360deg) scale(2);
+}

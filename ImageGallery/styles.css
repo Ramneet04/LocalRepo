@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    /* background-color: #74EBD5; */
+/* background-image: linear-gradient(90deg, #8eecc046 0%, #9ca9e9c7 100%); */
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+    padding: 1.3rem;
+}
+.container h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom:1.3rem;
+    /* margin: 20px 0; */
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 12px ;
+    overflow: hidden;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 20px #333;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.07);
+    transition: all 0.4s linear 0s;
+    filter: drop-shadow(0 0 8px #333);
+    /* box-shadow: ;  */
+}
+.card:hover img{
+    /* // image me lagagyege na ki box pe  */
+    filter: grayscale(0%);
+}
+.card figcaption{
+    position: absolute;
+    width: 100%;
+    /* height: 20%; */
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%,rgba(255, 255, 255, 0.098));
+    transition: 0.4s;
+}
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.04);
+}

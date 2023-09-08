@@ -1,0 +1,34 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.container{
+    border: 2px solid black;
+    height: 800px;
+    width: 900px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 245px 645px;
+    grid-template-rows: 40px 600px  40px;
+    /* //Gap bhi consider hota hai accordingly set its heigth and width  */
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hd hd" "side main" "ft ft";
+}
+.box{
+    background-color: aqua;
+    border: 1px solid rebeccapurple;
+}
+#Header{
+    grid-area: hd;
+}
+#SideBar{
+    grid-area: side;
+}
+#Content{
+    grid-area: main;
+}
+#Footer{
+    grid-area: ft;
+}

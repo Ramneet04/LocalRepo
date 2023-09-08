@@ -1,0 +1,20 @@
+.wrapper{
+    height: 1000px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: aqua;
+    border: 2px solid black;
+    /* position: relative; */
+    /* top: 100px; */
+}
+#box3{
+    position: relative;
+    top: 100px;
+    left:100px;
+}
+#box4{
+    position: fixed;
+}

@@ -1,0 +1,52 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(white,purple,black);
+    background-image: linear-gradient(to right,white,purple,black);
+    /* background-image: linear-gradient(to left,white,purple,black); */
+    background-image: linear-gradient(to bottom right,white,purple,black);
+    background-image: linear-gradient(to bottom right,white,#800080,lightblue,black);
+    background-image: linear-gradient(to bottom right,white,rgb(86, 230, 86),rgba(31, 31, 171, 0.909));
+    /* background-image: linear-gradient(to top,white,rgb(75, 167, 75),blue); */
+    /* background-image: linear-gradient(90deg,white,rgb(75, 167, 75),blue); */
+    background-image: linear-gradient(orange,white,green);
+}
+.mydiv{
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+    background-image: radial-gradient(circle, red 20%, yellow 50%, green 5%);   
+}
+h2{
+    text-shadow: 2px 2px 1px rgb(26, 4, 60),5px 5px 2px green;
+}
+.forboxshadow{
+   /* background-color: aqua; */
+   color:violet;
+   border: 2px solid black;
+    max-height: 200px;
+    /* min-height: 200px; */
+    width: 300px;
+    /* overflow: hidden; */
+    overflow: auto;
+    /* box-shadow: 10px 10px 5px; */
+    /* box-shadow: 10px 10px 5px blue; */
+    /* box-shadow: 10px -10px 5px blue; */
+    /* box-shadow: 1px 1px  black,-1px -1px black; */
+    /* filter: drop-shadow(3px,3px,red); */
+}
+.trans{
+    background-color: aqua;
+    width: 300px;
+    /* transform: translateX(100px); */
+    /* transform: translateX(100px); */
+    /* transform: translate(150px,100px); */
+    /* transform: scale(1.1); */
+    /* transform: scale(1.5,1.8); */
+    /* transform: skew(45deg); */
+}
+.trans:hover{
+    transform: skew(45deg);
+}

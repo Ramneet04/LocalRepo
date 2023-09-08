@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* //viewer to z axis distance is precepective */
+    perspective: 10px;
+}
+.container1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+.background{
+    transform: translateZ(-50px) scale(6);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* //image niche chali gyi  */
+    z-index: -1;
+    object-fit: cover;
+}
+.container1 h1{
+    position: absolute; 
+    /* //niche position kri hai  */
+    top: 160px;
+    text-shadow: 3px 3px 30px black;
+    color: white;
+    font-size: 160px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+section{
+    /* //pura section black or grey uske  up image uske nihce text okkkk  */
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 4rem 0;
+}
+.mainheading{
+    font-size: 4rem;
+    padding: 0 10rem;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;  
+    background-position: center;
+    height: 500px;
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+.paragraph{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.heading{
+    font-size: 3.5rem;
+    font-weight: 600;
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    transform: translateX(60%) translateY(200%);
+    color: black;
+
+}

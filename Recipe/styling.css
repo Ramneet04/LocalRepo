@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}    
+.navcontainer{
+    width: 98.9vw;
+    min-height: 80px;
+    background-color: rgba(47, 36, 193, 0.612);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    box-shadow: 5px 5px 3px yellow;
+
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+#navlist{
+    list-style: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-top: 20px;
+    width: 100%;
+    /* padding: 15px; */
+}
+#Brandlogo{
+    font-size: 60px;
+    padding-left: 20px;
+    color: black;
+    font-family: 'ADLaM Display', cursive;
+    text-shadow: 3px 3px 4px white;
+
+}
+#navigationlink{
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+#Home{
+    transition: all 0.3 linear 0s;
+}
+#Home:hover{
+    transform: scale(1.2);
+}
+#About{
+    transition: all 0.3 linear 0s;
+}
+#About:hover{
+    transform: scale(1.2);
+}
+#Contact{
+    transition: all 0.3 linear 0s;
+}
+#Contact:hover{
+    transform: scale(1.2);
+}
+.topright{
+    text-decoration: none;
+    color: azure;
+    text-shadow: 2px 2px 1px black;
+}
+
+
+
+
+.ContentBox{
+    width:50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+
+    padding: 2rem;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    background-color: white;
+     display: flex;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 1px 1px 30px black;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.leftbox h2{
+    font-size: 35px;
+    color: rgba(158, 19, 171, 0.858);
+}
+.H3all{
+    font-size: 25px;
+}
+.leftbox ul li{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leftbox ol li{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+.rightbox{
+    position:relative;
+    transition: all 0.5s linear 0s;
+}
+.overlay{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    /* //position abuslote top se 10px niche top kiska?? ye hoga relative ka jp ki rightbox hai pk bc  */
+    position: absolute;
+    top: 10px;
+    height: 95%;
+    width: 97%;
+    background-color: rgba(36, 34, 34, 0.715);
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.rightbox img{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 300px;
+    height: 220px;
+     border-radius: 15px;
+     /* filter: drop-shadow(0 0 0.75rem crimson); */
+     filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+     /* transition: all 0.5s linear 0s; */
+     /* transform: scale(1.1); */
+}
+.rightbox .overlay span{
+    color: white;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+}
+.rightbox .overlay span a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+.FooterBox{
+    width: 98.9vw;
+    min-height: 10px;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    box-shadow: 5px 5px 3px yellow;
+}
+.FooterBox p{
+    padding-top: 5px;
+    font-size: 18px;
+    text-align: start;
+    text-shadow: 2px 2px 3px white;
+}
