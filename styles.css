@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --green--color:rgb(5, 80, 45);
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container1{
+    width: 1200px;
+    margin:0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.navlogo{
+    display: flex;
+    /* justify-content: baseline */
+    align-items: center;
+}
+.R-letter{
+    width: 70px;
+}
+.R-text{
+    font-size: 28px;
+    /* // - 1.1rem naicee   */
+    margin-left: -1.1rem;
+}
+.navitems{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4em;
+}
+.home{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.home a{
+    color: black;
+    text-decoration: none;
+}
+.home a:hover{
+    transition: all 0.8s;
+    font-weight: bold;
+    color: rgb(5, 80, 45);
+}
+
+
+.Herosection{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+    gap: 5rem;
+}
+.fadded-text{
+    position: absolute;
+    bottom: -19%;
+    left: -1%;
+    user-select: none;
+    font-size: 6em;
+    color: rgb(212, 207, 207); 
+    font-weight: bold;
+}
+.Heroleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 2em;
+}
+.hero-left-heading{
+    font-size: 30px;
+    font-weight: 500;
+    color: #343d68;
+}
+.role{
+    font-weight: 600;
+    color: #4e45d5;
+}
+.hero-left-subheading{
+    font-size: 40px;
+    line-height: 45px;
+}
+.hero-left-desc{
+    margin-top: 1rem;
+    font-weight: 500;
+    width: 70%;
+}
+.hero-button{
+    /* // Note Padding se hi difference ayea size ka ans with ko  Fit content krdo size kam ho jayega  */
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    box-shadow: 5px 5px 7px #0000003f;
+    width: fit-content;
+    background-color: rgb(17, 103, 60);
+    border: solid 3px transparent;
+    padding: 0.8rem 2.3rem;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+}
+.hero-button::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+.hero-button:hover::before{
+    transform: scale(1);
+}
+.hero-button:hover{
+    border: solid 3px rgb(17,103,60);
+    color: black;
+}
+.Heroright{
+    position: relative;
+    margin-right: 5rem;
+}
+.absolute{
+    position: absolute;
+}
+#userimage{
+    width: 280px;
+    padding: 1.2rem;
+    filter: grayscale(0);
+    transition: all 1s;
+    animation: scaleImage 4s linear infinite;
+}
+#userimage img{
+    z-index: -10;
+}
+@keyframes scaleImage {
+    0%{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1.1);
+    }
+    100%{
+        filter: grayscale(1);
+        transform: scale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+}
+.icon-dots{
+    width: 3rem;
+    z-index: 9;   
+    bottom: -0.5rem;
+    right: 3.8rem;
+    animation: dotsAnimation 4s linear infinite;
+}
+@keyframes dotsAnimation {
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(-2rem) translateX(-2rem);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+.icon-cube{
+    z-index: 10;
+    top:-1.2em;
+    right: 0;
+    animation: cubeRotate 4s linear infinite;
+}
+@keyframes cubeRotate {
+    0%{
+        transform: rotateY(0deg)  translateY(0px);
+    }
+    50%{
+        transform: rotateY(190deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateY(360deg)  translateY(0px);
+    }
+}
+.icon-circle{
+    z-index: 11;
+    left:1em;
+    bottom: 1em;
+    animation: circleAnimation 4s linear infinite;
+}
+@keyframes circleAnimation {
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(2rem) translateX(-2rem);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+.icon-zigzag{
+    z-index: 12;
+    top: 1.2em;
+    left:-1em;
+    animation: zigzagAnimation 4s linear infinite;
+}
+@keyframes zigzagAnimation{
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(-2rem) translateX(2rem);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+.icon-plus{
+    z-index: 13;
+    top: -0.8rem;
+    left:50%;
+    animation: plusAnimation 3s linear infinite;
+}
+@keyframes plusAnimation{
+    50%{
+        top: 2%;
+        left: 48%;
+    }
+}
+#projects-section{
+    background: rgb(231, 231, 231);
+    margin: 4rem 0;
+    overflow-x: hidden;
+}
+.page-heading{
+    color:  rgb(5, 80, 45);
+    font-size: 90px;
+    text-align: center;
+    padding: 30px;
+}
+.projet-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.project-card{
+    width: 90%;
+    height: 550px;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+    margin:3rem 0;
+}
+#project1{
+    background-image: url(projectImages/Project1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project-card::after{
+    content: "";
+    position: absolute;
+    background-color: #1f1f1f85;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+.project-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform-origin: left;
+    background: linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transition: transform 0.4s linear;
+    z-index: 1;
+}
+.project-card:hover::before{
+    transform: scaleX(1);
+}
+.project-number{   
+    color: white;
+    opacity: 0;
+    /* display: none; */
+    transition: all 0.3s linear;
+}
+.project-number1-3{
+    position: absolute;
+    top:-45px;
+    right: -40px;
+    font-size: 170px;
+    font-weight: 600;
+    z-index: 10;
+}
+.projectcontent{
+    position: absolute;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    padding: 2em;
+    bottom: 11%;
+    z-index: 6;
+    gap: 1em;
+    transition: all 0.3s linear;
+}
+.project-skill-images{
+    width: 2rem;
+}
+.projectcontent-left{
+    left: 10%;
+}
+.project-skills{
+    width: 70%;
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.project-heading{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.project-subheading{
+    font-size: 1rem;
+}
+.projet-card:hover {
+    transform: scale(1.1rem);
+}
+#project-Button{
+    border: none;
+}
+.icon{
+    /* width: 3rem; */
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: white;
+    transition: color 0.3s;
+}
+.icon:hover{
+    /* color: var(--green--color); */
+    color: rgba(12, 118, 35, 0.865);
+}
+
+.project-card:hover .project-number{
+    /* display: block; */
+    opacity: 1;
+}
+.project-card:hover .projectcontent{
+    transform: scale(1.1);
+}
+#project2{
+    margin-left: 120px;
+    background-image: url(projectImages/Project2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project3{
+    background-image: url(projectImages/Project3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project4{
+    margin-left: 120px;
+    background-image: url(projectImages/Project4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.projectcontent-4{
+    left: 30%;
+}
+.project-number2-4{
+    position: absolute;
+    top:-45px;
+    left: -40px;
+    font-size: 170px;
+    font-weight: 600;
+    z-index: 10;
+}
+.projectcontent-right{
+    right: 10%;
+}
