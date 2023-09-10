@@ -411,3 +411,251 @@
 .projectcontent-right{
     right: 10%;
 }
+
+
+
+
+.skill-heading{
+    color: var(--green--color);
+    font-size: 3.65rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 3.5rem;
+}
+.skill-caps{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.skill-paragraph{
+    font-size: 1rem;
+    font-weight: 550;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(7, 20, 14);
+}
+
+
+.skill-logo{
+    width: 4rem;
+    transition: all 0.3s linear;
+    z-index: 10;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.skill-logo:hover{
+    transform: scale(1.5);
+}
+.skill-container{
+    position: relative;
+    display: flex;
+    padding: 4rem;
+    margin: 8rem auto;
+    justify-content: baseline;
+    align-items: center;
+    gap: 30px;
+}
+.skill-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skill-right{
+    position: relative;
+    top:-2rem;
+    right: 1rem;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 40px;
+}
+.skill-fadded-text{
+    position: absolute;
+    font-size: 11em;
+    font-style: bold;
+    color: rgb(197, 190, 190);
+    bottom: -29.5%;
+    right: -10%;
+    user-select: none;
+}
+.skill-bubble{
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    animation: bubble 5s linear infinite;
+    z-index: -1;
+}
+@keyframes bubble{
+    20%{
+        top:50%;
+    }
+    40%{
+        left: 50%;
+    }
+    60%{
+        right: 50%;
+    }
+    80%{
+        bottom: 50%;
+    }
+}
+
+
+
+#contactMe-section{
+    width: 100vw;
+    background-color: rgb(231,231,231);
+}
+.contactme-section{
+    display: flex;
+    padding: 4rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+    justify-content: space-around;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-left-heading{
+    font-size: 1.9rem;
+}
+.contact-left-subheading{
+    display: flex;
+    gap: 1em;
+    font-size: 1.1rem;
+}
+.contact-left-mail{
+    display: flex;
+    gap: 20px;
+}
+.contact-left-mail-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.mail-icon{
+    font-size: 2rem;
+}
+.mail-text{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.contact-left-mail-text a{
+    text-decoration: none;
+    color: rgba(20, 20, 181, 0.82);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.contact-left-mail-text:hover a{
+    color: rgb(232, 163, 15);
+}
+
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-right-heading{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    text-shadow: 4px 4px  1px white;
+    color: rgb(14, 13, 69);
+}
+.right-rocket{
+    color: rgb(13, 13, 69);
+    align-self: center;
+}
+.form-field-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-field{
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px rgb(13, 13, 69);
+}
+.contact-button{
+    margin: 2em auto;
+    background-color: rgb(10, 53, 171);
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    gap: 0.4rem;
+    transition: all 0.4s linear;
+}
+.contact-button:hover{
+    border-color: rgb(10, 53, 171);
+    border-radius: 30px;
+    transform: scale(0.98);
+}
+.contact-button:hover::before{
+    border-radius: 30px;
+}
+.form-field:hover{
+    border: 3px solid rgb(10, 53, 171);
+}
+#textarea-label{
+    color: rgb(8, 8, 56);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.form-field-textarea{
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px rgb(13, 13, 69);
+}
+.form-field-textarea:hover{ 
+    border: 3px solid rgb(10, 53, 171);
+}
+
+
+
+
+.footer-container{
+    position: relative;
+    /* //paddings e size badh jayega  */
+    padding: 4rem;
+    background-color: #212f71;
+}
+.footer-fadded-text{
+    position: absolute;
+    font-size: 3em;
+    font-style: bold;
+    color: rgb(134, 128, 128);
+     bottom: 0%; 
+    left: 1%; 
+    user-select: none;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-left{
+    display: flex;
+    gap :25px;
+}
+.footer-link a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.footer-link:hover{
+    transform: scale(1.1);
+}
+.footer-right{
+    font-size: 1.6rem;
+    display: flex;
+    gap: 20px;
+    color:white;
+}
+.footer-icon:hover{
+    color: green;
+}
